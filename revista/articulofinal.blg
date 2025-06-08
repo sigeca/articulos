@@ -1,0 +1,46 @@
+This is BibTeX, Version 0.99d (TeX Live 2023/Fedora 40)
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: articulofinal.aux
+The style file: filesFCEFyN-class/FCEFyN-refs-esp.bst
+Database file #1: Referencias.bib
+You've used 10 entries,
+            2009 wiz_defined-function locations,
+            563 strings with 5736 characters,
+and the built_in function-call counts, 3816 in all, are:
+= -- 383
+> -- 129
+< -- 11
++ -- 43
+- -- 41
+* -- 294
+:= -- 659
+add.period$ -- 32
+call.type$ -- 10
+change.case$ -- 66
+chr.to.int$ -- 10
+cite$ -- 10
+duplicate$ -- 167
+empty$ -- 263
+format.name$ -- 55
+if$ -- 756
+int.to.chr$ -- 1
+int.to.str$ -- 0
+missing$ -- 7
+newline$ -- 63
+num.names$ -- 32
+pop$ -- 59
+preamble$ -- 1
+purify$ -- 70
+quote$ -- 0
+skip$ -- 129
+stack$ -- 0
+substring$ -- 243
+swap$ -- 44
+text.length$ -- 4
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 56
+warning$ -- 0
+while$ -- 32
+width$ -- 0
+write$ -- 146

@@ -1,0 +1,19 @@
+\babel@toc {spanish}{}\relax 
+\contentsline {section}{\numberline {1}Introducción}{3}{}%
+\contentsline {section}{\numberline {2}Metodología}{4}{}%
+\contentsline {section}{\numberline {3}Resultados}{6}{}%
+\contentsline {subsection}{\numberline {3.1}Actividad A1-1}{7}{}%
+\contentsline {subsection}{\numberline {3.2}Actividad A1-2}{9}{}%
+\contentsline {paragraph}{Levantamiento de requerimiento}{9}{}%
+\contentsline {subsection}{\numberline {3.3}Actividad B1-1}{10}{}%
+\contentsline {subsection}{\numberline {3.4}Actividad B1-2}{10}{}%
+\contentsline {subsection}{\numberline {3.5}Actividad E1}{11}{}%
+\contentsline {subsection}{\numberline {3.6}Actividad A2-1}{12}{}%
+\contentsline {subsection}{\numberline {3.7}Actividad A2-2}{13}{}%
+\contentsline {subsection}{\numberline {3.8}Actividad B2-1}{13}{}%
+\contentsline {subsection}{\numberline {3.9}Actividad B2-2}{14}{}%
+\contentsline {subsection}{\numberline {3.10}Encuesta de satisfacción}{15}{}%
+\contentsline {subsection}{\numberline {3.11}Respuesta a pregunta abierta}{17}{}%
+\contentsline {section}{\numberline {4}Discusión}{20}{}%
+\contentsline {section}{\numberline {5}Conclusiones y Recomendaciones}{20}{}%
+\contentsline {section}{Referencias}{21}{}%

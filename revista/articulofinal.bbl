@@ -1,0 +1,75 @@
+\begin{thebibliography}{}
+
+\bibitem[{Alarcos Llorach}, 1999]{Alarcos1999}
+\stepcounter{iteminbib} [\arabic{iteminbib}] \tab
+{Alarcos Llorach}, E. (1999).
+\newblock {\em {Gramática de la Lengua Española}}.
+\newblock {Editorial Espasa Calpe}, {Madrid}.
+
+\bibitem[Arslan y Hansen, 1996]{ArslanHansen1996}
+\stepcounter{iteminbib} [\arabic{iteminbib}] \tab
+Arslan, L.~M. y Hansen, J. H.~L. (1996).
+\newblock \quotes{{Language accent classification in American English}}.
+\newblock {\em {Speech Communication}}, 18(1):353--367.
+
+\bibitem[Bartkova y Jouvet, 1999]{BarkovaJouvet1999}
+\stepcounter{iteminbib} [\arabic{iteminbib}] \tab
+Bartkova, K. y Jouvet, D. (1999).
+\newblock \quotes{{Selective prosodic post-processing for improving recognition
+  of French telephone numbers}}.
+\newblock En: Smith, J., editor, {\em {Proc. of the 7th European Conference on
+  Speech Communication and Technology}}. Taylor and Francis, pp. 267--270.
+
+\bibitem[{Ibarra Echeverría} et~al., 2010]{Indura2010}
+\stepcounter{iteminbib} [\arabic{iteminbib}] \tab
+{Ibarra Echeverría}, M., {Núñez Solís}, E., y {Huerta Ibáñez}, J. (2010).
+\newblock {\em Manual de Aceros inoxidables}.
+\newblock {INDURA S.A.}, Cerritos, Chile.
+
+\bibitem[Jacobs et~al., 1935]{NACA460}
+\stepcounter{iteminbib} [\arabic{iteminbib}] \tab
+Jacobs, E., Ward, K., y Pinkerton, R. (1935).
+\newblock \quotes{The characteristics of 78 related airfoils sections from
+  tests in the variable-density wind tunnel}.
+\newblock Reporte t\'ecnico Nº 460, {\em {National Advisory Commitee for
+  Aeronautics (NACA)}}, Washington {D.C.}
+
+\bibitem[Krause, 2014]{Krause2014}
+\stepcounter{iteminbib} [\arabic{iteminbib}] \tab
+Krause, G. (2014).
+\newblock {\em Análisis teórico y numérico de atractores e intermitencia en
+  la ecuación {DNLS}}, Tesis doctoral.
+\newblock {Facultad de Ciencias Exactas, Físicas y Naturales; Universidad
+  Nacional de Córdoba}, Córdoba, Argentina.
+
+\bibitem[Mitchell, 2001]{Mitchell2001}
+\stepcounter{iteminbib} [\arabic{iteminbib}] \tab
+Mitchell, J.~K. (2001).
+\newblock \quotes{{Physicochemistry of Soils for Geoenvironmental
+  Engineering}}, pp. 691--710.
+\newblock En: {\em {Geotechnical and Geoenvironmental Engineering Handbook}}.
+  {Kluger Academic Publishers}, {Boston}.
+
+\bibitem[Pérez, 2015]{Radio2015}
+\stepcounter{iteminbib} [\arabic{iteminbib}] \tab
+Pérez, J. (2015).
+\newblock {\em Columna semanal}.
+\newblock Emisión radial, programa {``Tarde de radio''} de {FM 123.4} emitido
+  el 15/03/2015.
+
+\bibitem[Wang et~al., 2015]{WangEtAl2015}
+\stepcounter{iteminbib} [\arabic{iteminbib}] \tab
+Wang, H., Liu, S., Gong, J., Wu, N., y Lin, J. (2015).
+\newblock \quotes{{Contribution of velocity vortices and fast shock reflection
+  and refraction to the formation of EUV waves in solar eruptions}}.
+\newblock {\em The Astrophysical Journal}, pp. 114--129.
+
+\bibitem[Wikipedia, 2011]{CFDwebpage}
+\stepcounter{iteminbib} [\arabic{iteminbib}] \tab
+Wikipedia (2011).
+\newblock \quotes{Computational fluid dynamics}.
+\newblock Tomado de
+  \url{https://en.wikipedia.org/wiki/Computational_fluid_dynamics}
+  (10/07/2018).
+
+\end{thebibliography}

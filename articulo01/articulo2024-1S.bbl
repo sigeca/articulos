@@ -1,0 +1,482 @@
+\begin{thebibliography}{}
+
+\bibitem [\protect \citeauthoryear {%
+Becker%
+, Parker%
+\BCBL {}\ \BBA {} Al-Fedaghi%
+}{%
+Becker%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2012}}%
+}]{%
+becker2012modeling}
+\APACinsertmetastar {%
+becker2012modeling}%
+\begin{APACrefauthors}%
+Becker, K.%
+, Parker, G.%
+\BCBL {}\ \BBA {} Al-Fedaghi, S.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYear{2012}.
+\newblock
+\APACrefbtitle {Modeling and Simulation in the Systems Engineering Life Cycle}
+  {Modeling and simulation in the systems engineering life cycle}.
+\newblock
+\APACaddressPublisher{}{Springer}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Boehm%
+}{%
+Boehm%
+}{%
+{\protect \APACyear {1988}}%
+}]{%
+boehm1988spiral}
+\APACinsertmetastar {%
+boehm1988spiral}%
+\begin{APACrefauthors}%
+Boehm, B\BPBI W.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{1988}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {A Spiral Model of Software Development and Enhancement}
+  {A spiral model of software development and enhancement}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Computer}{21}{5}{61--72}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Canchingre~Bone%
+}{%
+Canchingre~Bone%
+}{%
+{\protect \APACyear {2023}}%
+}]{%
+canchingre2023}
+\APACinsertmetastar {%
+canchingre2023}%
+\begin{APACrefauthors}%
+Canchingre~Bone, M\BPBI E.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYear{2023}.
+\newblock
+\APACrefbtitle {Modelo Educativo por competencias con el enfoque contructivista
+  - investigativo - intercultural} {Modelo educativo por competencias con el
+  enfoque contructivista - investigativo - intercultural}.
+\newblock
+\APACaddressPublisher{}{inblue}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+CES%
+}{%
+CES%
+}{%
+{\protect \APACyear {2017}}%
+}]{%
+cesutelvt2017}
+\APACinsertmetastar {%
+cesutelvt2017}%
+\begin{APACrefauthors}%
+CES.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2017}{}{}.
+\newblock
+\APACrefbtitle {Informe técnico de evaluación de la propuesta de rediseño
+  curricular de la carrera de "Tecnología de la Información" presentada por
+  la Universidad Técnica Luis Vargas Torres de Esmeraldas.} {Informe técnico
+  de evaluación de la propuesta de rediseño curricular de la carrera de
+  "tecnología de la información" presentada por la universidad técnica luis
+  vargas torres de esmeraldas.}
+\newblock
+\begin{APACrefURL}
+  \url{https://repositorioutlvte.org/Repositorio/2024-08-27-FQSA-02293.pdf}
+  \end{APACrefURL}
+\newblock
+\APACrefnote{Último acceso: 31 de diciembre de 2024}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Dabbagh%
+}{%
+Dabbagh%
+}{%
+{\protect \APACyear {2005}}%
+}]{%
+dabbagh2005pedagogical}
+\APACinsertmetastar {%
+dabbagh2005pedagogical}%
+\begin{APACrefauthors}%
+Dabbagh, N.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2005}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Pedagogical models for e-learning: A theory-based design
+  framework} {Pedagogical models for e-learning: A theory-based design
+  framework}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{International Journal of Technology in Teaching and
+  Learning}{1}{1}{25--44}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+de Madrid%
+}{%
+de Madrid%
+}{%
+{\protect \APACyear {2020}}%
+}]{%
+madrid2020}
+\APACinsertmetastar {%
+madrid2020}%
+\begin{APACrefauthors}%
+de Madrid, U\BPBI P.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2020}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Aprendizaje Basado en Investigación} {Aprendizaje
+  basado en investigación}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Servicio de Innovación Educativa-UPM}{}{}{}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Felder%
+\ \BBA {} Brent%
+}{%
+Felder%
+\ \BBA {} Brent%
+}{%
+{\protect \APACyear {2005}}%
+}]{%
+felder2005teaching}
+\APACinsertmetastar {%
+felder2005teaching}%
+\begin{APACrefauthors}%
+Felder, R\BPBI M.%
+\BCBT {}\ \BBA {} Brent, R.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2005}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Understanding student differences} {Understanding
+  student differences}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Journal of Engineering Education}{94}{1}{57--72}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Fitzgerald%
+}{%
+Fitzgerald%
+}{%
+{\protect \APACyear {2006}}%
+}]{%
+fitzgerald2006agile}
+\APACinsertmetastar {%
+fitzgerald2006agile}%
+\begin{APACrefauthors}%
+Fitzgerald, B.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2006}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Agile software development: Challenges and implications}
+  {Agile software development: Challenges and implications}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Communications of the ACM}{49}{10}{25--30}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Fowler%
+}{%
+Fowler%
+}{%
+{\protect \APACyear {2004}}%
+}]{%
+fowler2004uml}
+\APACinsertmetastar {%
+fowler2004uml}%
+\begin{APACrefauthors}%
+Fowler, M.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYear{2004}.
+\newblock
+\APACrefbtitle {UML Distilled: A Brief Guide to the Standard Object Modeling
+  Language} {Uml distilled: A brief guide to the standard object modeling
+  language}.
+\newblock
+\APACaddressPublisher{}{Addison-Wesley Professional}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Hughes%
+\ \BBA {} Cotterell%
+}{%
+Hughes%
+\ \BBA {} Cotterell%
+}{%
+{\protect \APACyear {2017}}%
+}]{%
+hughes2017agile}
+\APACinsertmetastar {%
+hughes2017agile}%
+\begin{APACrefauthors}%
+Hughes, B.%
+\BCBT {}\ \BBA {} Cotterell, M.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYear{2017}.
+\newblock
+\APACrefbtitle {Software Project Management} {Software project management}\
+  (\PrintOrdinal{7th}\ \BEd).
+\newblock
+\APACaddressPublisher{}{McGraw-Hill Education}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Kuz%
+}{%
+Kuz%
+}{%
+{\protect \APACyear {2021}}%
+}]{%
+kuz2021scrum}
+\APACinsertmetastar {%
+kuz2021scrum}%
+\begin{APACrefauthors}%
+Kuz, A.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2021}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Scrum: A new framework applied to education} {Scrum: A
+  new framework applied to education}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Revista Eduweb}{15}{3}{10--17}.
+\newblock
+\begin{APACrefURL} \url{https://doi.org/10.46502/issn.1856-7576/2021.15.03.1}
+  \end{APACrefURL}
+\newblock
+\begin{APACrefDOI} \doi{10.46502/issn.1856-7576/2021.15.03.1} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+on Information Technology~Curricula%
+}{%
+on Information Technology~Curricula%
+}{%
+{\protect \APACyear {2017}}%
+}]{%
+ITCurricula2017}
+\APACinsertmetastar {%
+ITCurricula2017}%
+\begin{APACrefauthors}%
+on Information Technology~Curricula, T\BPBI G.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYear{2017}.
+\newblock
+\APACrefbtitle {Information Technology Curricula 2017: Curriculum Guidelines
+  for Baccalaureate Degree Programs in Information Technology} {Information
+  technology curricula 2017: Curriculum guidelines for baccalaureate degree
+  programs in information technology}.
+\newblock
+\APACaddressPublisher{}{Association for Computing Machinery (ACM) and IEEE
+  Computer Society (IEEE-CS)}.
+\newblock
+\begin{APACrefURL}
+  \url{https://www.acm.org/binaries/content/assets/education/it2017.pdf}
+  \end{APACrefURL}
+\newblock
+\APACrefnote{A Report in the Computing Curricula Series}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Pressman%
+}{%
+Pressman%
+}{%
+{\protect \APACyear {2014}}%
+}]{%
+pressman2014software}
+\APACinsertmetastar {%
+pressman2014software}%
+\begin{APACrefauthors}%
+Pressman, R\BPBI S.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYear{2014}.
+\newblock
+\APACrefbtitle {Software Engineering: A Practitioner's Approach} {Software
+  engineering: A practitioner's approach}\ (\PrintOrdinal{8th}\ \BEd).
+\newblock
+\APACaddressPublisher{}{McGraw-Hill Education}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Prince%
+}{%
+Prince%
+}{%
+{\protect \APACyear {2004}}%
+}]{%
+prince2004active}
+\APACinsertmetastar {%
+prince2004active}%
+\begin{APACrefauthors}%
+Prince, M.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2004}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Does active learning work? A review of the research}
+  {Does active learning work? a review of the research}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Journal of Engineering Education}{93}{3}{223--231}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Salmon%
+}{%
+Salmon%
+}{%
+{\protect \APACyear {2000}}%
+}]{%
+salmon2000e}
+\APACinsertmetastar {%
+salmon2000e}%
+\begin{APACrefauthors}%
+Salmon, G.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2000}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {E-moderating: The Key to Teaching and Learning Online}
+  {E-moderating: The key to teaching and learning online}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Kogan Page}{}{}{}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Schwab%
+}{%
+Schwab%
+}{%
+{\protect \APACyear {2017}}%
+}]{%
+schwab2017fourth}
+\APACinsertmetastar {%
+schwab2017fourth}%
+\begin{APACrefauthors}%
+Schwab, K.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYear{2017}.
+\newblock
+\APACrefbtitle {The Fourth Industrial Revolution} {The fourth industrial
+  revolution}.
+\newblock
+\APACaddressPublisher{}{Crown Publishing Group}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Smith%
+}{%
+Smith%
+}{%
+{\protect \APACyear {2019}}%
+}]{%
+smith2019project}
+\APACinsertmetastar {%
+smith2019project}%
+\begin{APACrefauthors}%
+Smith, K\BPBI A.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2019}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Project-Based Learning in Engineering Education}
+  {Project-based learning in engineering education}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Journal of Engineering Education}{}{}{}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+SOMMERVILLE%
+}{%
+SOMMERVILLE%
+}{%
+{\protect \APACyear {2005}}%
+}]{%
+sommerville2005}
+\APACinsertmetastar {%
+sommerville2005}%
+\begin{APACrefauthors}%
+SOMMERVILLE, I.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYear{2005}.
+\newblock
+\APACrefbtitle {Ingenieria de Software} {Ingenieria de software}.
+\newblock
+\APACaddressPublisher{}{Person Educatión S.A.}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Yadav%
+, Subedi%
+, Lundeberg%
+\BCBL {}\ \BBA {} Bunting%
+}{%
+Yadav%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2011}}%
+}]{%
+yadav2011problem}
+\APACinsertmetastar {%
+yadav2011problem}%
+\begin{APACrefauthors}%
+Yadav, A.%
+, Subedi, D.%
+, Lundeberg, M\BPBI A.%
+\BCBL {}\ \BBA {} Bunting, C\BPBI F.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYear{2011}.
+\newblock
+\APACrefbtitle {Problem-based learning: Influence on students' learning in an
+  electrical engineering course} {Problem-based learning: Influence on
+  students' learning in an electrical engineering course}.
+\newblock
+\APACaddressPublisher{}{Elsevier}.
+\PrintBackRefs{\CurrentBib}
+
+\end{thebibliography}

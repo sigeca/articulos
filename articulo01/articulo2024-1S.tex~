@@ -1,0 +1,1187 @@
+\documentclass[12pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[spanish]{babel}
+% \usepackage[a4paper, bindingoffset=0.2in,left=1.8cm,  right=1.8cm, top=1in, bottom=2cm, footskip=.25in]{geometry}
+\usepackage[a4paper, bindingoffset=0.2in,left=2.54cm,  right=2.54cm, top=2.54cm, bottom=2.54cm, footskip=.25in]{geometry}
+
+\usepackage{setspace}
+\usepackage{times} % Para Times New Roman
+\usepackage{titlesec}
+
+% Configuración de interlineado
+\onehalfspacing % Espaciado 1.5 líneas
+
+\setlength{\parindent}{0.5in} % Sangría
+
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{dblfloatfix} % Ajuste de tablas y figuras en documentos de dos columnas
+\usepackage{caption} % Personalización de leyendas
+\usepackage[table]{xcolor}
+\usepackage{longtable}
+\usepackage{array} % Asegúrate de incluir este paquete en el preámbulo
+\usepackage{enumitem}
+\usepackage{listings}
+\usepackage{amsmath}
+\usepackage{pdflscape}
+\usepackage[most]{tcolorbox}  % Ca
+\usepackage{multicol}
+\usepackage{afterpage} % Para ejecutar comandos en una página específica
+\usepackage{hyperref}  % Gestiona mejor enlaces y URLs
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    citecolor=blue,
+    urlcolor=blue,
+    breaklinks=true, % Permite que los enlaces largos se dividan correctamente
+    pdftitle={Tu título},
+    pdfauthor={Tu nombre}
+}
+\usepackage{apacite}
+
+% Definir tipo de columna con márgenes internos
+\newcolumntype{M}[1]{>{\begin{tcolorbox}[colback=white, boxrule=0mm, left=1mm, right=2mm, top=0mm, bottom=1mm]}p{#1}<{\end{tcolorbox}}}
+
+\newcolumntype{P}[1]{>{\raggedright\arraybackslash}p{#1}<{\vspace{3mm}}}
+
+% Redefinir fila de las celdas para agregar espacio
+\renewcommand{\arraystretch}{0.5} % Ajusta el espacio vertical dentro de las celdas
+
+% Define una nueva columna con márgenes internos
+\newcolumntype{P}[1]{>{\raggedright\arraybackslash}p{#1}}
+
+
+% Espaciado adicional con paquetes compatibles
+\setlength{\tabcolsep}{5pt} % Espaciado horizontal en las tablas
+\setlength{\extrarowheight}{20pt} % Espaciado adicional entre filas
+
+
+% Colores personalizados
+\definecolor{headerbg}{RGB}{200, 230, 255} % Color de fondo para encabezado
+\definecolor{verdefuerte}{RGB}{0,128,0} % Ajusta los valores RGB para el tono que desees
+
+\title{Metodología basada en proyectos para la enseñanza de ingeniería de software: Experiencia en la carrera de Tecnología de la Información de la Universidad Técnica Luis Vargas Torres}
+
+\author{Stalin Francis Q.}
+\date{Universidad Técnica Luis Vargas Torres}
+
+
+
+
+\lstset{
+  basicstyle=\ttfamily\small,  % Estilo de fuente monoespaciada
+  keywordstyle=\color{blue},    % Palabras clave en azul
+  commentstyle=\color{green},   % Comentarios en verde
+  stringstyle=\color{red},      % Cadenas en rojo
+  showstringspaces=false,       % No mostrar espacios en cadenas
+  frame=single,                 % Borde alrededor del código
+  breaklines=true,              % Cortar las líneas largas
+  language=bash                % Definir el lenguaje
+}
+
+
+\begin{document}
+\maketitle
+
+
+\newpage
+\begin{multicols}{2}
+  
+\section*{Resumen}
+
+  
+  En este artículo se presenta la experiencia educativa lograda en la asignatura ``Ingeniería de Software I'' durante el periodo 2024-1S en la Carrera en Tecnologías de la Información de la  Universidad Técnica Luis Vargas Torres de Esmeraldas. La experiencia consistió en la aplicación de la  metodología de aprendizaje basado en proyectos (ABP), integrada con actividades prácticas que combinaron habilidades técnicas y sociales. Al final del ciclo, se evaluó la estrategia mediante una encuesta de satisfacción, cuyos resultados y retroalimentación  contribuyeron  a su  mejora continua.\\
+
+
+
+ 
+  PALABRAS CLAVES: Ingeniería de Software, Apendizaje Basado en Proyecto, Tecnología de la Información.
+  
+\section*{Abstract}
+
+This article presents the educational experience achieved in the subject “Software Engineering I” during the period 2024-1S in the Information Technology Degree at the Luis Vargas Torres Technical University of Esmeraldas. The experience consisted of the application of the project-based learning (PBL) methodology, integrated
+with practical activities that combined technical and social skills. At the end of the cycle, the strategy was evaluated through a satisfaction survey, whose results and feedback contributed to its continuous improvement.\\
+
+
+  KEYWORDS: Software Engineering, Project-Based Learning, Information Technology.
+
+              
+
+
+
+
+
+
+\section{Introducción}
+La asignatura Ingeniería de Software I forma parte de eje de especialización del plan de estudio de la carrera de Tecnología de la Información, en la Facultad de Ingenierías de la Universidad Técnica Luis Vargas Torres de Esmeraldas. La enseñanza de esta asignatura presenta desafiós relacionados con la integración efectiva entre teoría y práctica, lo que a menudo se traduce en un insuficiente preparación para el entorno laboral. Esta situación se ve agravada  por las limitaciones propias de la universidad pública, tales como la escasez de recursos técnicos y pedagógicos, la falta de espacios adecuados para el aprendizaje, y el tiempo  restringido para tutorías y refuerzo académico. Además  el contexto local influye significativamente: Esmeraldas es una ciudad con escaso desarrollo en el ambito de la tecnología de la información. Como consecuencia, las clases de esta asignatura han sido tradicionalmente impartidas mediante metodologías basadas en la lección  magistral y el modelo de escuela tradicional~\cite{yadav2011problem,becker2012modeling}. \\
+En este contexto, se implementó y aplicó la metodología de aprendizaje basada en proyectos (ABP) en la asignatura Ingeniería de Software I, con el objetivo de promover un aprendizaje más activo, autónomo y orientado a la solución de problemas reales. Esta estrategia didáctica busca superar las limitaciones propias del enfoque tradicional, alineándose con las demandas del mercado laboral, que requiere profesionales capaces de adaptarse a entornos cambiantes y complejos~\cite{dabbagh2005pedagogical}. \\
+La puesta en marcha del ABP en la asignatura de Ingeniería de Software I necesitó realizar reajustes a los contenidos del sílabo, planes semestrales y diapositivas. Además, contempló el desarrollo de un proyecto de aula para la creación de un sistema de información. Este proyecto abarcó desde la concepción del tipo de sistema de información a desarrollar hasta la creación, documentación y despliegue de un sistema de información web totalmente funcional llamado SICA. La gestión de este proyecto de aula, cuyo marco de trabajo ya está definido en la teoría del Ciclo de Vida del Software y la metodología ágil~\cite{sommerville2005}, requirió de un tiempo mucho mayor a los cuatro meses que dura un ciclo académico, al menos si se asume la tarea de la etapa de implementación. Por lo tanto, para lograr este objetivo titánico, fue necesario trabajar sobre un software ya desarrollado por el docente, garantizando un pleno conocimiento de su arquitectura y facilitando su uso como herramienta pedagógica para los estudiantes~\cite{pressman2014software}.\\
+Los ajustes realizados tanto al sílabo, planes semestrales y guías de prácticas de laboratorio no fueron realizados de forma arbitraria. Estos cambios se llevaron a cabo en función de los resultados de aprendizaje y los contenidos mínimos definidos por el proyecto de carrera~\cite{cesutelvt2017}. Además, se consideraron las directrices curriculares para el programa de licenciatura en Tecnología de la Información elaboradas por la Association for Computing Machinery (ACM) y la IEEE Computer Society (IEEE-CS)~\cite{ITCurricula2017}, asegurando que el contenido estuviera alineado con los estándares internacionales.\\ 
+Adicionalmente, la implementación de la metodología ABP también promueve el desarrollo de habilidades blandas, como el trabajo en equipo, la comunicación efectiva y la gestión del tiempo, competencias que son cada vez más valoradas en la industria~\cite{fowler2004uml,salmon2000e}. Estos aspectos fueron integrados en las actividades académicas mediante una planificación colaborativa y un seguimiento constante por parte del docente, garantizando que los estudiantes no solo desarrollaran capacidades técnicas, sino también interpersonales. \\
+Por último, este enfoque innovador también representa un compromiso con la mejora continua de la calidad educativa, superando barreras institucionales y geográficas, y contribuyendo a formar profesionales con una visión global y capacidad de resolver problemas del mundo real. La experiencia adquirida a través de este modelo pedagógico se alinea con las tendencias actuales en la educación superior y refuerza la importancia de preparar a los estudiantes para enfrentar los desafíos de la cuarta revolución industrial~\cite{schwab2017fourth}.\\
+
+
+
+
+\section{Metodología}
+Se realizó un estudio cuantitativo transversal con 50 estudiantes (18 mujeres y 32 hombres) del 5to ciclo de la carrera de Tecnología de la Información de la Universidad Técnica Luis Vargas Torres, en la asignatura de Ingeniería de Software I durante el período 2024-1S. Los estudiantes, al final de un proceso de aprendizaje que duró 4 meses, respondieron una encuesta de satisfacción sobre la estrategia didáctica basada en proyectos aplicada. Este enfoque se fundamenta en investigaciones previas que destacan la eficacia del Aprendizaje Basado en Proyectos (ABP) en disciplinas técnicas~\cite{smith2019project, prince2004active}.  
+
+El diseño del curso Ingeniería de Software I comprendió cuatro unidades~(cuadro \#\ref{tab:evaluaciones}), en las que cada unidad integró teoría y práctica mediante tres tipos de actividades: aprendizaje teórico (Actividad \textbf{A}), aprendizaje práctico (Actividad \textbf{B}) y aprendizaje autónomo (Actividad \textbf{C}). Cada dos unidades se aplicó una evaluación integral (Actividad \textbf{E}), resultando en un total de 14 actividades de aprendizaje y evaluación durante el ciclo lectivo. Este enfoque permitió no solo un aprendizaje integral del proceso de desarrollo de software, sino también la creación de un producto final funcional y documentado, como lo sugieren las buenas prácticas en proyectos educativos de ingeniería~\cite{felder2005teaching, hughes2017agile}.  
+
+\end{multicols}
+
+\noindent
+
+\begin{table}[H]
+  \centering
+\begin{tabular}{|lll|lll|l|lll|lll|l|}
+  \hline
+  \multicolumn{7}{|c|}{Primer Hemisemestre}&\multicolumn{7}{c|}{Segundo Hemisemestre} \\ \hline
+  \multicolumn{3}{|c|}{Unidad I}&\multicolumn{3}{c|}{Unidad II}&E1 &\multicolumn{3}{c|}{Unidad III}&\multicolumn{3}{c|}{Unidad IV}&E2 \\ \hline
+
+  
+  A1-1&B1-1&C1-1&A1-2&B1-2&C1-2&E1&A2-1&B2-1&C2-1&A2-2&B2-2&C2-2&E2 \\ \hline
+\end{tabular}
+    
+  \caption{Esquema de Actividades de aprendizaje y evaluación en la UTELVT}
+\end{table}
+  
+
+
+
+
+\begin{multicols}{2}
+
+El proceso inició con la presentación del docente, los estudiantes y una introducción a la asignatura en dos sesiones iniciales. Durante estas sesiones, se abordaron los fundamentos de la Ingeniería de Software, complementados con una actividad de aprendizaje autónomo basada en la lectura de un artículo académico sobre su importancia~\cite{pressman2014software}. En sesiones posteriores, se introdujo la metodología ágil Scrum, formando grupos de cinco estudiantes con roles definidos (Product Owner, Scrum Master y Team Developers), siguiendo modelos pedagógicos que destacan la relevancia del trabajo colaborativo~\cite{kuz2021scrum}.  
+
+En la primera fase práctica, los estudiantes desarrollaron habilidades para la recolección y análisis de requerimientos. En la actividad A1-1, se crearon historias de usuario mediante interacción con usuarios ficticios. Posteriormente, en la actividad A1-2, se verificaron estas necesidades con usuarios reales, documentando firmas y evidencias fotográficas. Este proceso culminó en la creación del Documento de Especificaciones Funcionales y No Funcionales (DEFN) en la actividad B1-1, seguido por el diseño de 20 prototipos de interfaces en la actividad B2-2. Estas actividades permitieron cubrir las etapas iniciales del ciclo de vida del software: recolección de requerimientos, análisis y diseño~\cite{boehm1988spiral}.  
+
+En el segundo parcial, los estudiantes se adentraron en las etapas de desarrollo, mantenimiento y despliegue del software. Durante la actividad A2-1, se introdujo la arquitectura Modelo-Vista-Controlador (MVC) y el uso de GitHub. Los estudiantes crearon un módulo funcional denominado SIGECA y lo desplegaron en un servidor real en la actividad A2-2. Finalmente, documentaron y presentaron el módulo en las actividades B2-1 y B2-2. Estas tareas fomentaron un aprendizaje práctico en entornos reales y alineados con las tendencias de la industria tecnológica~\cite{fitzgerald2006agile}.  
+
+Paralelamente, se asignaron lecturas científicas relacionadas con los temas abordados en las actividades C1-1 y C1-2, fomentando la capacidad analítica y el desarrollo de soluciones creativas a problemas complejos. Este enfoque integral permitió a los estudiantes vivir la teoría y práctica del desarrollo ágil de software, logrando resultados significativos tanto en la adquisición de conocimientos como en la creación de productos funcionales.  
+
+
+Cada una de las actividades que evalúan los temas abordados según el cuadro \#~\ref{tab:temas-actividades}, fueron organizadas e incluidas en el plan semestral, dosificadas en el tiempo adecuado para que los estudiante puedan cumplir con cada una de ellas sin interferir en las actividades de las otras asignaturas por ellos tomadas, como se detalla en el cuadro \#~\ref{tab:PlanSemestral}. \\
+
+\end{multicols}
+
+
+
+\noindent
+
+\begin{longtable}{|l|p{3cm}|p{3cm}|p{6.5cm}|}
+\caption{Unidades, temas y sus actividades de aprendizaje} \label{tab:temas-actividades} \\
+\hline 
+\rowcolor{gray!30}
+\textbf{Unidad} & \textbf{Tema} & \textbf{Tema adaptado}& \textbf{Actividad de aprendizaje} \\ \hline
+\endfirsthead
+
+\hline
+\rowcolor{gray!30}
+\textbf{Unidad} & \textbf{Tema} & \textbf{Tema adaptado}& \textbf{Actividad de aprendizaje} \\ \hline
+
+\endhead
+
+\hline 
+\endfoot
+
+\endlastfoot
+
+
+
+
+
+
+  Unidad I & El software y la ingeniería de software  & Introducción a la Ingeniería de software &
+                                                                  
+                         \begin{minipage}[H]{1.0\linewidth}
+                           \vspace{2pt}
+                           \begin{itemize}[leftmargin=10pt]
+                           \item A1-1: Participación en clase respondiendo preguntas sobre el tema tratado.
+                           \item B1-1: Taller para la creación de historias de usuario y levantamiento de requerimiento.
+                           \item C1-1: Lectura de artículo científico.\\
+                             “¿Existe una situación de crisis del software educativo?”
+                           \end{itemize}
+                           \vspace{1pt}
+                         \end{minipage} \\ \hline
+                         
+    Unidad II & Gestión del software & Metodología Agil Scrum &
+                         \begin{minipage}[H]{1.0\linewidth}
+                           \vspace{2pt}
+                           \begin{itemize}[leftmargin=10pt]
+                           \item A1-2: Participación en clase respondiendo preguntas sobre el tema tratado.
+                           \item B1-2: Taller para la creación de prototipos y dramatización sobre metodología ágil Scrum.
+                           \item C1-2: Lectura de artículo científico. \\ \textit{``Métodologías Ágiles en el Desarrollo de Software''}
+                           \item E1: Evaluación sumativa primer parcial.
+
+                           \end{itemize}
+                           \vspace{1pt}
+                         \end{minipage} \\ \hline
+  
+    Unidad III & Análisis de requisitos del sistema y del software & Arquitectura del Software MVC, framework y Github &
+
+                         \begin{minipage}[H]{1.0\linewidth}
+                           \vspace{2pt}
+                           \begin{itemize}[leftmargin=10pt]
+                           \item A2-1: Participación en clase respondiendo preguntas sobre el tema tratado.
+                           \item B2-1: Creación, mantenimiento de una aplicación web (uso de Git, Github,framework, MVC, Servidor web).
+                           \item C2-1: Lectura de artículo científico.\\ \textit{''Frameworks PHP basados en la arquitectura Modelo-Vista-Controlador para desarrollo de aplicaciones web .''}
+                           \end{itemize}
+                           \vspace{1pt}
+                         \end{minipage} 
+  \\ \hline
+    Unidad IV & Dimensiones del Software & Documentación  &
+
+                         \begin{minipage}[H]{1.0\linewidth}
+                           \vspace{2pt}
+                           \begin{itemize}[leftmargin=10pt]
+                           \item A2-2: Participación en clase respondiendo preguntas sobre el tema tratado.
+                           \item B2-2: Mantenimiento y evolución de la aplicación web).
+                           \item C2-2: Lectura de artículo científico. \textit{``DevOps in Practice for Education Management Information System at ECNU''}
+                           \item E2: Evaluación sumativa final.
+                           \end{itemize}
+                           \vspace{1pt}
+                         \end{minipage} \\ \hline
+    
+\end{longtable}
+
+\begin{multicols}{2}
+
+
+
+\section{Resultados}
+\label{sec:resultados}
+
+La asignatura de Ingeniería de Software I, se la dictó en el quinto ciclo con una duración de cuatro meses, con la carga horaria de cinco horas semanales (tres de teoría y dos de laboratorio). La planificación contenpló un total de 32 sesiones, distribuidas en dos sesiones por semana. En el cuadro \# \ref{tab:PlanSemestral} se presenta la planificación semestral, donde se detallan las 32 sesiones junto con los temas a impartir y un resumen general de las actividades programadas.
+  
+  
+\end{multicols}
+
+
+
+
+
+\begin{longtable}{|p{1cm}|p{2cm}|p{1.5cm}|p{2.5cm}|p{4cm}|p{2.2cm}|}
+\caption{Plan semestral de la asignatura.} \label{tab:PlanSemestral} \\
+  \hline 
+\rowcolor{gray!30}
+\textbf{Sesión} & \textbf{Fecha y  duración}&\textbf{Lugar}&\textbf{Tema} & \textbf{Actividades desarrolladas}& \textbf{Metodologías pedagógicas} \\ \hline
+\endfirsthead
+
+\hline
+\rowcolor{gray!30}
+\textbf{Sesión} & \textbf{Fecha y  duración}&\textbf{Lugar}&\textbf{Tema} & \textbf{Actividades desarrolladas}& \textbf{Metodologías pedagógicas} \\ \hline
+\endhead
+
+\hline 
+\endfoot
+
+\endlastfoot
+
+1 & \begin{minipage}[H]{1.0\linewidth}
+            
+             Martes,\\ 6-08-2024
+             (3h)
+            
+             \end{minipage}
+                           & Aula de Clase & Presentación del docente y la clase.      &   
+                                    \begin{minipage}[H]{1.0\linewidth}
+
+                                   \noindent
+                                  
+                                    \begin{itemize}[leftmargin=8pt]
+                                      \item Presentación del docente y los estudiantes.
+                                      \item Prueba diagnóstica.
+                                      \item Entrega del silabo, plan semestral y proyecto de aula.
+                                      \end{itemize}
+                                      \vspace{0.5pt} % Espaciado superior
+
+                                      \end{minipage} & Aprendizaje Basado en la Inducción
+  \\ \hline
+2 &  \begin{minipage}[H]{1.0\linewidth}
+
+             Miércoles,\\  07-08-2024
+             (2h)
+             
+             \end{minipage}
+                              & Aula de clase &Socialización de la planificación   &
+                                         \begin{minipage}[H]{1.0\linewidth}
+                                     \vspace{4pt}
+
+\begin{itemize}[leftmargin=8pt]
+                                         \item Socialización de los resultados de la  prueba de diagnóstico:fortalezas y debilidades.
+                                         \item Análisis del silabo, plan semestral y proyecto de aula.
+                                         \item Preguntas y respuesta sobre la planificación a desarrollar (Actividad A1-1: Participación en clase).
+
+                                         \end{itemize}
+                                         \vspace{0.5pt} % Espaciado superior
+                                      \end{minipage} & Aprendizaje colaborativo 
+  \\ \hline
+3 &  \begin{minipage}[H]{1.0\linewidth}
+             
+              Martes,\\ 13-08-2024
+              (3h)
+             
+             \end{minipage}
+                          & Aula de clase & Introducción a la ingeniería de software. &
+
+                                      \begin{minipage}[H]{1.0\linewidth}
+                                     \vspace{4pt}
+
+
+                                        \begin{itemize}[leftmargin=8pt]                                        \item Charla introductoria con enfasis en el ciclo de vida de software y la metodología ágil Scrum.
+                                        \item Creación de grupos scrum (5 integrantes).
+
+                                          
+                                        \item Preguntas y respuestas sobre el tema tratado (Actividad A1-1: Participación en clase)
+                                        \end{itemize}
+                                        \vspace{1pt}
+                                      \end{minipage} & Clase Magistral y Discusión Dirigida
+  \\ \hline
+
+  
+4 &  \begin{minipage}[H]{1.0\linewidth}
+
+             Miércoles,\\ 14-08-2024
+             (3h)
+
+             \end{minipage}
+                             &Lab. de computación & Registro en el sistema SICA.    &
+
+                                      \begin{minipage}[H]{1.0\linewidth}
+                                     \vspace{4pt}
+
+                                        \begin{itemize}[leftmargin=8pt]
+                                       \item Socialización del artículo científico. \\ \textbf{``¿Existe una situación de crisis del software educativo?''} . 
+                                        \item Asignación de la actividad C1-1.
+                                        \item Introducción a la plataforma  SICA
+                                        \item Registro de nuevos usuarios. 
+                                        \item Exploración de módulo como evento y portafolio.
+                                        \end{itemize}
+                                        \vspace{0.5pt}
+                                      \end{minipage} & Aprendizaje Basado en proyecto
+  \\ \hline
+  \rowcolor{red!10} % Color gris claro
+5 &  \begin{minipage}[H]{1.0\linewidth}
+
+              Martes,\\ 20-08-2024
+              (2h)
+
+             \end{minipage}
+                            & Aula de clase & Foro de discusión actividad C1-1     &
+                                      \begin{minipage}[H]{1.0\linewidth}
+                                     \vspace{4pt}
+                                     
+
+                                        \begin{itemize}[leftmargin=8pt]
+                                        \item Cada grupo Scrum se presentara para discutir el tema del artículo.
+                                        \item La actividad es grabada en video para su posterior evaluación.
+                                       
+                                        \end{itemize}
+
+                                      \end{minipage} & Aprendizaje Basado en Casos.
+                                                                             
+  \\ \hline
+
+  6 & \begin{minipage}[H]{1.0\linewidth}
+             
+              Miércoles, 21-08-2024
+              (2h)
+             
+             \end{minipage}
+                           &Lab. de Computación &Exploración del sistema SICA &
+
+                                      \begin{minipage}[H]{1.0\linewidth}
+                                     \vspace{4pt}
+                                        \begin{itemize}[leftmargin=8pt]
+                                        \item Revisión de los módulos implementados.
+                                        \item Navegación por los módulo de ``Persona'', ``documento'', ``distributivo'' y otros de SICA. 
+                                          \end{itemize}
+                                        \vspace{0.5pt}
+                                      \end{minipage} & Aprendizaje experimental.
+  \\ \hline 
+
+  \rowcolor{yellow!20} % Color gris claro
+
+  
+
+7 & \begin{minipage}[H]{1.0\linewidth}
+             
+              Martes, 27-08-2024
+             (3 horas)
+             
+             \end{minipage}
+                            &Aula de clase & Introducción a la ingeniería de requerimientos y Creación de historias de usuario.&
+                                          \begin{minipage}[H]{1.0\linewidth}
+                                     \vspace{4pt}
+
+                                         \begin{itemize}[leftmargin=8pt]
+                                         \item Introducción teórica.
+                                         \item Ejecución del taller de historias de usuario(Actividad A1-1).\\
+                                           \item Validación de historias de usuario.
+                                             \item Conversión en requerimientos funcionales y no funcionales.\\
+                                          \end{itemize}
+                                         \end{minipage} & Talleres Prácticos.
+                                         
+  \\ \hline
+  \rowcolor{blue!10}
+8 &  \begin{minipage}[H]{1.0\linewidth}
+             
+              Miércoles, 28-08-2024
+              (2 horas)
+             
+             \end{minipage}
+                           &Aula de clase &Levantamiento de requirimiento(Actividad B1-1). &
+                                          \begin{minipage}[H]{1.0\linewidth}
+                                     \vspace{4pt}
+
+
+                                         \begin{itemize}[leftmargin=8pt]
+
+                                   \item Dramatización del levantamiento de requerimiento.
+                                   \item Entrevista a usuario (Actividad B1-1).
+
+                                         \end{itemize}
+                                         \end{minipage} & Aprendizaje Basado en Problemas.
+ 
+
+  \\ \hline
+\multicolumn{6}{|c|}{SEGUNDA UNIDAD}  \\ \hline
+9 &\begin{minipage}[H]{1.0\linewidth}
+
+             Martes,\\ 03-09-2024
+             (2h)
+
+             \end{minipage}
+                             &Aula de clase & Metodología Ágil, Scrum.  & 
+                                          \begin{minipage}[H]{1.0\linewidth}
+                                        \vspace{4pt}
+
+                                            \begin{itemize}[leftmargin=8pt]
+                                             \item Introducción a las metodologías Ágiles, enfasis en Scrum.
+                                             \item Preguntas y respuestas (Actividad A1-2: Participación en clases).\\
+                                               
+                                               \end{itemize}
+                                               \end{minipage}  & Aprendizaje Activo.
+                                               \\ \hline
+
+
+10 &  \begin{minipage}[H]{1.0\linewidth}
+
+             Miércoles,\\ 04-09-2024
+             (3h)
+
+             \end{minipage}
+                            &Aula de clase & Socialización de artículo sobre scrum &
+
+                                         \begin{minipage}[H]{1.0\linewidth}
+                                     \vspace{4pt}
+                                    
+                                             \begin{itemize}[leftmargin=8pt]
+                                           \item Socialización de artículo sobre escrum.
+                                           \item Pregunas y respuestas(Actividad A1-2: Participación en clase).
+                                             \item Asignación de actividad C1-2.\\
+                                               
+                                           \end{itemize}
+                                         \end{minipage} & Simulación y Rol.
+
+  \\ \hline
+\rowcolor{yellow!10}
+11 & \begin{minipage}[H]{1.0\linewidth}
+             
+             Martes,\\ 10-09-2024
+             (2h)
+             
+             \end{minipage}
+                         &Laborat. & Creación de prototipos, Interfaces de usuario.   &
+                                      \begin{minipage}[H]{1.0\linewidth}
+                                     \vspace{4pt}
+                                        \begin{itemize}[leftmargin=8pt]
+
+                                         \item Introducción a los prototipos  . 
+                                         \item  Taller creación de prototipos (Activida A1-2: Participación en clases).\\
+                                           
+                                         \end{itemize}
+                                         \end{minipage} & Práctica Guiada.
+
+
+                                             \\ \hline
+
+\rowcolor{red!10}
+12 & \begin{minipage}[H]{1.0\linewidth}
+             
+             Miércoles, 11-09-2024
+             (3 horas)
+             
+             \end{minipage}
+                            &Aula de clase & Foro de discución Actividad C1-2.     &
+                                          \begin{minipage}[H]{1.0\linewidth}
+                                        \vspace{4pt}
+                                             \begin{itemize}[leftmargin=8pt]
+                                            \item Los grupos Scrum realizan un foro de discución sobre al articulos.
+                                           \item Se graba en video (Actividad C1-2)
+                                             \end{itemize}
+                                               \end{minipage} & Aprendizaje Basado en Proyectos.
+
+                                             \\ \hline
+13 & \begin{minipage}[H]{1.0\linewidth}
+             
+             Martes,\\ 17-09-2024
+             (2h)
+             
+             \end{minipage}
+                             &Aula de clase&Requerimientos vs prototipos. &
+                                          \begin{minipage}[H]{1.0\linewidth}
+                                        \vspace{4pt}
+
+                                      \begin{itemize}[leftmargin=8pt]
+                                      \item  Comparación de requerimientos vs prototipos. 
+                                      \item  Feedback de actividades anteriores.
+                                             \end{itemize}
+                                               \end{minipage} & Análisis Comparativo.
+                                          
+  \\ \hline
+
+14 & \begin{minipage}[H]{1.0\linewidth}
+             
+              Miércoles,\\ 18-09-2024
+              (3h)
+             
+             \end{minipage}
+                  &Aula de clase & Dramatización metodología Scrum.               &
+                                          \begin{minipage}[H]{1.0\linewidth}
+                                        \vspace{4pt}
+                                    
+                                               \begin{itemize}[leftmargin=8pt]
+                                             \item Análisis de dramatizaciones anteriores.
+                                             \item Planificación de la dramatización actual (Actividad A1-2).
+                                             \end{itemize}
+                                             \vspace{0.5pt}
+                                             \end{minipage} & Dramatización.
+  \\ \hline
+15 & \begin{minipage}[H]{1.0\linewidth}
+             
+             Martes,\\ 24-09-2024
+             (2h)
+             
+             \end{minipage}
+                     &Lab. Audiovisual & Taller de dramatización Metodologíá  Scrum. &
+                                    \begin{minipage}[H]{1.0\linewidth}
+                                     \vspace{4pt}
+
+                                     \begin{itemize}[leftmargin=8pt]
+                                       \item   Realización de la dramatización planificada.
+                                     \end{itemize}
+                                             \vspace{0.5pt}
+                                             \end{minipage} & Aprendizaje Basado en Proyectos.
+
+  \\ \hline
+  \rowcolor{blue!10}
+16 & \begin{minipage}[H]{1.0\linewidth}
+             
+             Miércoles,\\ 25-09-2024
+             (2h)
+             
+             \end{minipage}
+                        &Lab. Audiovisual &Ejecución dramatización Scrum.   &
+                                          \begin{minipage}[H]{1.0\linewidth}
+                                        \vspace{4pt}
+                                    
+                                               \begin{itemize}[leftmargin=8pt]
+
+                                        \item  Dramatización (Actividad A1-2).
+                                     \end{itemize}
+                                             \vspace{0.5pt}
+                                             \end{minipage} & Dramatización.
+
+
+                                          \\ \hline
+
+\multicolumn{6}{|c|}{TERCERA UNIDAD}  \\ \hline
+
+17 & \begin{minipage}[H]{1.0\linewidth}
+             
+             Martes, 01-10-2024
+             (3 horas)
+             
+             \end{minipage}
+                           &Aula de clase &Documentación de requerimientos.      &
+                                          \begin{minipage}[H]{1.0\linewidth}
+                                        \vspace{4pt}
+                                    
+                                             \begin{itemize}[leftmargin=8pt]
+
+                                          \item Introducción al documento de requerimientos.
+                                             \item {Socialización Actividad E1.} \\ (Documentación de los requerimientos).\\
+                                          \end{itemize}
+                                          \end{minipage} & Clase Teórico-Práctica.
+  \\ \hline
+18 & \begin{minipage}[H]{1.0\linewidth}
+             
+             Miércoles,\\ 02-10-2024
+             (3h)
+             
+             \end{minipage}
+                            &Aula de clase &Revisión de la documentación de requerimientos.     &
+                                          \begin{minipage}[H]{1.0\linewidth}
+                                        \vspace{4pt}
+                                             \begin{itemize}[leftmargin=8pt]
+                                        \item Revisión de actividad documental (actividad E1). 
+                                           \item  Corrección de mejoras.
+                                         \end{itemize}
+                                          \end{minipage} & Feedback Constructivo.
+ 
+                                          \\ \hline
+
+19 & \begin{minipage}[H]{1.0\linewidth}
+             
+             Martes,\\ 08-10-2024
+             (2 horas)
+             
+             \end{minipage}
+                            &Aula de clase & Arquitectura del software(MVC)    &
+                                          \begin{minipage}[H]{1.0\linewidth}
+                                        \vspace{4pt}
+                                              \begin{itemize}[leftmargin=8pt]
+                                        \item Charla sobre el modelo-vista-controlador(MVC).
+                                        \item Asignación de un módulo SICA a los grupos Scrum. \\
+                                          \end{itemize}
+                                          \end{minipage} & Aprendizaje Basado en Proyecto.
+ 
+                                          \\ \hline
+
+20 & \begin{minipage}[H]{1.0\linewidth}
+             
+             Miércoles,\\ 09-10-2024
+             (3h)
+             
+             \end{minipage}
+                            &Aula de clase &Socialización de artículo científico. &
+
+                                        \begin{minipage}[H]{1.0\linewidth}
+                                        \vspace{4pt}
+                                    
+                                               \begin{itemize}[leftmargin=8pt]
+                                            \item Análisis de artículos sobe MVC y framework.
+                                             \item {Asignación de Actividad C2-1} \\ \textbf{ Frameworks PHP basados en la arquitectura Modelo-Vista-Controlador para desarrollo de
+aplicaciones web.}
+                                             \end{itemize}
+                                             \vspace{0.5pt}
+                                             \end{minipage} &Lectura Crítica y Debate.
+                                               \\ \hline
+ \rowcolor{red!10}
+21 &\begin{minipage}[H]{1.0\linewidth}
+             \begin{itemize}[leftmargin=8pt]
+             \item Martes, 15-10-2024
+             \item (2 horas)
+             \end{itemize}
+             \end{minipage}
+                             &Aula de clase &Evaluación actividad C2-1. &
+                                      \begin{minipage}[H]{1.0\linewidth}
+                                     \vspace{4pt}
+
+                                                                         
+                                        \begin{itemize}[leftmargin=8pt]
+                                        \item  Foro de discución Activida c2-1.
+                                        \item  Grabación dela actividad.
+                                             \end{itemize}
+                                             \vspace{0.5pt}
+                                             \end{minipage} & Clase Teórico-Práctico.
+                                           \\ \hline
+
+                                           
+
+22 & \begin{minipage}[H]{1.0\linewidth}
+
+             Miércoles,\\ 16-10-2024
+             (2h)
+
+             \end{minipage}
+                            &Lab. de Computación &Práctica de repositorios en Github.   &
+                                          \begin{minipage}[H]{1.0\linewidth}
+                                        \vspace{4pt}
+
+                                    
+                                    
+                                               \begin{itemize}[leftmargin=8pt]
+
+                                     \item  Creación de cuentas y repositorios.
+                                     \item  Subida del MVC del módulo asignado.
+
+                                             \end{itemize}
+                                             \vspace{0.5pt}
+                                             \end{minipage} & Práctica Guiada.
+                                           \\ \hline
+
+
+
+23 & \begin{minipage}[H]{1.0\linewidth}
+             
+             Martes,\\ 22-10-2024
+             (3h)
+             
+             \end{minipage}
+                           &Aula de clase &Despliegue de módulo SICA. & 
+                                        \begin{minipage}[H]{1.0\linewidth}
+                                        \vspace{4pt}
+
+                                    
+               
+                                    
+                                          \begin{itemize}[leftmargin=8pt]
+                                        \item Socialización y envío de la actividad B2-1
+                                        \item Deploy de módulo.
+                                          \end{itemize}
+                                          \vspace{0.5pt}
+                                          \end{minipage} & Aprendizaje Basado en Proyecto.
+                                          \\ \hline
+\rowcolor{blue!10}
+  24 & \begin{minipage}[H]{1.0\linewidth}
+             
+             Miércoles, 23-10-2024
+             (2h)
+             
+             \end{minipage}
+                                      &Lab. de Computación &Configuración y despliegue en hosting     &
+                                          \begin{minipage}[H]{1.0\linewidth}
+                                        \vspace{4pt}
+
+                                    
+                                    
+                                               \begin{itemize}[leftmargin=8pt]
+
+
+                                          \item Preparación de la primera versión de la plataform web.
+                                          \item Ejecución actividad B2-1.
+                                          \end{itemize}
+                                          \vspace{0.5pt}
+                                          \end{minipage} & Práctica Guiada.
+
+                                           \\ \hline
+\rowcolor{black}
+  \multicolumn{6}{|c|}{TERCERA UNIDAD}  \\ \hline
+
+  25 & \begin{minipage}[H]{1.0\linewidth}
+             
+             Martes,\\ 29-10-2024
+             (3h)
+             
+             \end{minipage}
+                            &Lab. de Computación &Creación de README     &
+                                       \begin{minipage}[H]{1.0\linewidth}
+                                        \vspace{4pt}
+                            
+                                    
+                                         \begin{itemize}[leftmargin=8pt]
+                                          \item Socialización y edición de README para el módulo asignados (ejemplificación módulo SICA).
+                                          \item {Edición del README para el módulo SICA asignado a cada grupo Actividad A2-1}.
+                                        \end{itemize}
+                                        \end{minipage} & Clase Práctica.
+
+  \\ \hline
+26 & \begin{minipage}[H]{1.0\linewidth}
+             
+             Miércoles,\\ 30-11-2024
+             (2h)
+             
+             \end{minipage}
+                            &Aula de Clase &Creación de Diapositivas.     &
+                                        \begin{minipage}[H]{1.0\linewidth}
+                                        \vspace{4pt}
+
+                                        \begin{itemize}[leftmargin=8pt]
+                                        \item Explicación y evaluación de diapositiva modulo sexo SICA.
+                                        \item Actividad B2-2 \\ (Creación de diapositiva  módulo asignado para el despliegue)
+                                        \end{itemize}
+                                        \end{minipage} & Presentación Dirigida.
+
+                                        \\ \hline
+27 & \begin{minipage}[H]{1.0\linewidth}
+             
+             Martes,\\ 05-11-2024
+             (3h)
+             
+             \end{minipage}
+                           &Lab. de Computación &Mantenimiento y ajustes.  &
+                                     \begin{minipage}[H]{1.0\linewidth}
+                                        \vspace{4pt}
+                                    
+                                         \begin{itemize}[leftmargin=8pt]
+                                         \item Revisión y ajustes finales de módulos.
+                                           \item Práctica de mantenimiento básico.
+                                         \end{itemize}
+                                           \end{minipage} & Práctica guiada.
+
+  \\ \hline
+28 & \begin{minipage}[H]{1.0\linewidth}
+             
+             Miércoles,\\ 06-11-2024
+             (2h)
+
+             \end{minipage}
+                           & Aula de clase & Actividad C2-2  &
+                                       \begin{minipage}[H]{1.0\linewidth}
+                                        \vspace{4pt}
+                                    
+                                         \begin{itemize}[leftmargin=8pt]
+                                         \item Socialización de artículo científico sobre DevOps.  
+
+                                          \item {Ejecución de Actividad c2-2} \\ DevOps in Practice for Education Management Information System at ECNU. \\
+                                         \end{itemize}
+                                           \end{minipage} & Lectura Crítica y Debate.
+
+
+  \\ \hline
+29 & \begin{minipage}[H]{1.0\linewidth}
+             
+             Martes,\\ 19-11-2024
+             (3h)
+             
+             \end{minipage}
+                            &Aula de clase &Arquitectura del software     &
+                                         \begin{minipage}[H]{1.0\linewidth}
+                                        \vspace{4pt}
+                                    
+                                         \begin{itemize}[leftmargin=8pt]
+                                         \item Explicación de la arquitectura,  módulo de ejemplo Sexo.
+                                         \item  Socialización de vídeo exposición ciclo anterior.
+                                         \item {Asignación de actividad A2-2.} \\ (Exposición del módulo SICA asignado).
+                                         \end{itemize}
+                                           \end{minipage} & Clase Magistral.
+
+                                         \\ \hline
+30 &\begin{minipage}[H]{1.0\linewidth}
+             
+             Martes,\\ 26-11-2024
+             (3h)
+             
+             \end{minipage}
+                            &Lab. Audiovisual &Defensa grupal.     &
+                                         \begin{minipage}[H]{1.0\linewidth}
+                                        \vspace{4pt}
+                                           \begin{itemize}[leftmargin=8pt]
+                                             \item Exposición de actividad grupal.
+                                             \item Edición de materiales.
+                                           \end{itemize}
+                                           \end{minipage} & Aprendizaje  Basado en Proyectos.
+  \\ \hline
+  \rowcolor{blue!10}
+31 & \begin{minipage}[H]{1.0\linewidth}
+             
+             Miércoles,\\ 27-12-2024
+             (3h)
+             
+             \end{minipage}
+                             &Lab. Audiovisual &Aplicación final    &
+                                            \begin{minipage}[H]{1.0\linewidth}
+                                        \vspace{4pt}
+                                    
+                                            \begin{itemize}[leftmargin=8pt]
+                                            \item Presentación final de aplicación web.
+                                            \item Todos los estudiantes deberan evidenciar su participación.
+                                            \end{itemize}
+                                            \vspace{4pt}
+                                            \end{minipage} & Aprendizaje Basado en Proyectos.
+
+
+
+
+
+
+                                            \\ \hline
+32 & \begin{minipage}[H]{1.0\linewidth}
+             
+             Miércoles,\\ 04-12-2024
+             (3h)
+             
+             \end{minipage}
+                             &Aula de clase & Evaluación final sumativa. &
+                                            \begin{minipage}[H]{1.0\linewidth}
+                                        \vspace{4pt}
+
+                                             \begin{itemize}[leftmargin=8pt]
+
+                                            \item Actividad E2: Evaluación sumativa final.
+                                            \item Encuesta de satisfacción (Actividad E2). 
+
+                                            \end{itemize}
+                                                                                    \vspace{4pt}
+
+                                            \end{minipage} & Evaluación Sumativa.
+                                              \\ \hline
+
+
+% Aquí se inserta el contenido generado
+\end{longtable}
+
+\begin{multicols}{2}
+
+El proceso de aprendizaje comenzó  en la  \textbf{Sesión \#1}, realizada el martes 6 de agosto del 2024, en el paralelo A, con el tema \textbf{``Presentación del docente y la clase''}. Durante esta sesión, el docente se presentó y solicitó que cada estudiante realizara una breve introducción preguntas como ``¿Cuáles son sus nombres y apellidos?'', ``¿De que colegio proviene?'', ``¿Porqué escogió la carrera?'' y ``¿Qué aspira a ser en su ejercicio profesional?''. Esta actividad permitió establecer una conexión inicial, creando un ambiente más amigable y accesible para los estudiantes. Posteriormente, se aplicó una prueba de diagnóstico con el propósito de evaluar los conocimiento previos que cada estudiante traía consigo al inicio del aprendizaje. Finalmente, se entregó el silabo de la asignatura para que los estudiantes lo revisaran en preparación para su análisis en la siguiente sesión. \\
+En la \textbf{sesión \#2} con el tema \textbf{``Socialización y análisis de la planificación y proyecto de aula''}, se llevo a cabo un análisis detallado del sílabo. Durante esta revisión, se destacaron los temas a abordar, las actividades de aprendizaje propuestas y la metodología basada en proyectos que guió el desarrollo de la asignatura. Posteriormente, se examinó el proyecto de aula, poniendo especial énfasis en cada una de las actividades planificadas. Cada actividad contaba con un tiempo y una duración previamente establecidos, lo cual no podían ser modificados. Por ello, se resaltó la importancia de respetar los tiempos planificados para garantizar el cumplimiento efectivo de los objetivos y el éxito del proyecto. Al final de esta sesion se da indicaciones del material que se tiene que revisar (videos y diapositivas) sobre el tema de la siguientes  sesión recordando que la actividad A1-1 que consiste en la participaxión en clase con preguntas sobre la unidad No 1 sera evaluada durante las 4 primeras semanas.\\
+En la \textbf{sesión \#3}, con el tema \textbf{``Introducción a la ingeniería de software''}, se abordaron los fundamentos teóricos de esta disciplina, haciendo énfasis en aspectos claves como el ciclo de vida del software, las metodologías de desarrollo y su evolución  a lo largo del tiempo. Se profundizó especialmente en la metodología ágil Scrum, destacando su enfoque en la gestión de proyectos y los roles que desempeñan los miembros del equipo. Durante esta sesión, se conformaron grupos de trabajo con cinco estudiantes, asignándoles roles específicos según la metodología Scrum. Además, se socializó un artículo científico titulado ``¿Existe una situación de crisis del software educativo?'', cuyo objetivo era que los estudiantes comprendieran la importancia de desarrollar y mantener sistemas de información educativos, un desafío gestionado en esta asignatura. Al final de la sesión se evaluó en algunos estudiantes la actividad A1-1, con preguntas y respuestas sobre el tema tratado, y se asignó la actividad de aprendizaje autónomo C1-1 como tarea para consolidar los conceptos trabajados en clase.  \\
+En la \textbf{sesión \#4},  con el tema \textbf{``Registro en el Sistema de Información de Control Académica (SICA)''}, los estudiantes llevaron consigo la Guía Práctica de Laboratorio( GPL-IS1-001), la cual detalla el procedimiento para acceder a la plataforma SICA. Durante la práctica, se realizaron actividades como la creación de un nuevo usuario, el registro en el sistema y la exploración de los módulos disponibles para el perfil de estudiante, tales como Eventos y Portafolio. El objetivo de esta actividad en el laboratorio fue que, tras la lectura del artículo asignado en la actividad C1-1, los estudiantes identificaran las carencias y oportunidades de mejora en un software educativo, conectando la teoría con la práctica, al final de esta sesión se continuó evaluando la actividad A1-1 haciendo preguntas a un grupo diferente de estudiantes y registrando su participación en clase.\\
+En la \textbf{sesión \#5} con el tema \textbf{``Revisión y socialización: calificación actividad C1-1''},  se realizó la revisión de las actividades C1-1 previamente entregadas y calificadas. Durante la sesión, se brindó retroalimentación detallada, destacando tanto los puntos fuertes como las áreas de mejora en la presentación de este tipo de trabajos. El objetivo fue proporcionar a los estudiantes herramientas y recomendaciones para optimizar sus futuras entregas.\\
+En la \textbf{sesión \#6}, se trabajó en el laboratorio de computación con el tema \textbf{``Explorando el sistema de información SICA''}. Con la guía de laboratorio, los estudiantes exploraron los distintos módulos que componen el sistema de información \textbf{SICA}. Sin embargo, por motivos de seguridad, los estudiantes no tuvieron acceso completo a algunos módulos. Durante la sesión, realizaron anotaciones basándose en las explicaciones proporcionadas por el docente.\\
+En la \textbf{sesión \#7}, con el tema \textbf{``Creación de historias de usuario''}, se ofreció una introducción sobre qué son las historias de usuario y cómo elaborarlas. Se socializó la actividad \textbf{A1-1}, que consistió en la creación de historias de usuario. Posteriormente, se realizó un taller en el que cada estudiante desarrolló diez historias de usuario.\\
+En la \textbf{sesión \#8}, con el tema \textbf{``Introducción a la ingeniería de requerimientos''}, y tras haber comprendido teórica y prácticamente el concepto de las historias de usuario, se impartió una introducción a la ingeniería de requerimientos. Se enfatizó el rol del \textit{Product Owner} y la importancia de crear un ambiente adecuado para interactuar con el usuario y recopilar sus necesidades sobre el sistema que se desea desarrollar. Además, se socializó la actividad \textbf{B1-1}, la cual fue asignada como tarea.\\
+En la \textbf{sesión \#9}, con el tema \textbf{``Análisis de levantamiento de requerimientos''}, se revisaron los requerimientos recopilados por cada grupo y se contrastaron con las historias de usuario. Durante esta sesión, se realizaron observaciones, se corrigieron errores y se descartaron aquellas historias de usuario que no estaban bien elaboradas.\\
+Con las historias de usuario ya revisadas, en la \textbf{sesión \#10}, los estudiantes asistieron al laboratorio de computación con el tema \textbf{``Metodología ágil Scrum''}. Se ofreció una introducción más profunda sobre la metodología ágil \textbf{Scrum}.\\
+En la \textbf{sesión \#11}, con el tema \textbf{``Inspección de interfaces''}, los estudiantes, con sus respectivas guías de laboratorio, inspeccionaron una por una las interfaces de los módulos del sistema de información \textbf{SICA}.\\
+En la \textbf{sesión \#12}, con el tema \textbf{``Creación de prototipos''}, los estudiantes ya tienen claro lo que el usuario espera del sistema. El docente dicta una introducción sobre la creación de prototipos (interfaces de usuario), destacando que la mejor forma de iniciar es realizándolos a mano. Además, se socializa la actividad \textbf{B1-2} y se realiza un taller en el que, trabajando en grupo, los estudiantes diseñan varias interfaces de usuario basadas en los requerimientos obtenidos en la actividad \textbf{B1-1}.\\
+En la \textbf{sesión \#13}, con el tema \textbf{``Requerimientos vs prototipos''}, se identificaron falencias en los prototipos creados por los estudiantes. Durante esta sesión, se enfatizó la importancia de la simplicidad en el diseño, tomando como referencia las interfaces del sistema de información \textbf{SICA} ya desarrollado. Asimismo, se estableció un sistema de codificación para cada interfaz creada.\\
+En la \textbf{sesión \#14}, con el tema \textbf{``Dramatización de la metodología Scrum''}, se revisaron videos de trabajos realizados por ciclos anteriores, analizando sus fortalezas y debilidades. Además, se socializó la actividad \textbf{A1-2} y se realizaron pruebas previas para la dramatización.\\
+En la \textbf{sesión \#15}, con el tema \textbf{``Ejecución de la dramatización de la metodología Scrum''}, los estudiantes buscaron el mejor escenario para llevar a cabo la dramatización de la metodología ágil.\\
+En la \textbf{sesión \#16}, con el tema \textbf{``Ejecución de la dramatización Scrum''}, los estudiantes continuaron con la dramatización en un entorno previamente seleccionado y preparado por ellos mismos.\\
+En la \textbf{sesión \#17}, con el tema \textbf{``Documentación de requerimientos''}, se presentó un documento de requerimientos funcionales y no funcionales correspondiente al módulo \textbf{Sexo}. Los estudiantes debieron replicar este documento adaptándolo al módulo que les fue asignado.\\
+En la \textbf{sesión \#18}, con el tema \textbf{``Revisión de documentación de requerimientos''}, se revisaron los documentos entregados, destacando sus debilidades y fortalezas. Además, se solicitó a los estudiantes que realizaran las correcciones necesarias en caso de ser requerido.\\
+En la \textbf{sesión \#19}, con el tema \textbf{``Arquitectura del software Modelo-Vista-Controlador y frameworks''}, se impartió en el aula una introducción a la arquitectura de software Modelo-Vista-Controlador (MVC) y a los principales frameworks que utilizan esta arquitectura.\\
+En la \textbf{sesión \#20}, con el tema \textbf{``Socialización de artículo científico: actividad C2-1''}, se socializó un artículo sobre el Modelo-Vista-Controlador (MVC) y los diferentes tipos de frameworks que utilizan el lenguaje PHP. Esta actividad sirvió como base para la socialización de la actividad de aprendizaje autónomo \textbf{C2-1}.\\
+En la \textbf{sesión \#21}, se trabajó en el laboratorio de computación con el tema \textbf{``Uso de GitHub y repositorios''}. Con la guía de laboratorio en mano, los estudiantes crearon sus cuentas en la plataforma GitHub, generaron un repositorio y cargaron el módulo que les fue asignado.\\
+En la \textbf{sesión \#22}, se trabajó en el aula con el tema \textbf{``Práctica de uso de GitHub, Git y repositorios''}. Durante esta sesión, cada estudiante creó una cuenta en GitHub, configuró un repositorio y cargó el módulo de SICA asignado a su grupo.\\
+En la \textbf{sesión \#23}, los estudiantes trabajaron en el laboratorio con el tema \textbf{``Despliegue del módulo SICA''}, realizando el despliegue utilizando la guía de laboratorio.\\
+En la \textbf{sesión \#24}, se continuó trabajando en el laboratorio de computación con el tema \textbf{``Práctica de despliegue del módulo SICA''}, donde los estudiantes siguieron realizando el despliegue.\\
+En la \textbf{sesión \#25}, se trabajó en el aula de clase con el tema \textbf{``Creación de README para el módulo SICA''}. Durante la sesión, se explicó cómo realizar mejoras y mantenimiento al módulo asignado a cada grupo, y se socializó la actividad \textbf{A2-1} para ser enviada.\\
+En la \textbf{sesión \#26}, se trabajó en el laboratorio de computación con el tema \textbf{``Socialización de diapositivas del módulo SEXO de SICA''}, enfocándose en realizar mejoras y mantenimiento al módulo.\\
+En la \textbf{sesión \#27}, se trabajó en el aula de clase con el tema \textbf{``Socialización, mantenimiento y revisión de diapositivas del módulo SEXO de SICA''}. Se socializó la actividad \textbf{C2-1}, que consistió en la elaboración de un artículo sobre la importancia de documentar el software.\\
+En la \textbf{sesión \#28}, se trabajó en el laboratorio de computación con el tema \textbf{``Socialización de la actividad C2-2: artículo científico''}, donde, con la guía del laboratorio, los estudiantes construyeron el README del módulo asignado.\\
+En la \textbf{sesión \#29}, se trabajó en el aula de clases con el tema \textbf{``Socialización para la exposición del módulo SICA''}. Durante la clase, se revisó el trabajo realizado en la actividad \textbf{C2-1}, brindando indicaciones para que este pueda ser mejorado.\\
+En la \textbf{sesión \#30}, se trabajó en el aula de clases con el tema \textbf{``Defensa de grupo: Arquitectura del software del módulo SICA''}. Durante la clase, se revisó la documentación del módulo \textbf{Sexo}, la cual detalla la estructura de cada archivo que conforma el módulo, basada en la arquitectura de software \textbf{Modelo-Vista-Controlador (MVC)}. Posterior a la explicación, se envió la actividad \textbf{B2-1}, que consiste en que cada grupo replique esta documentación utilizando el módulo que le fue asignado.\\
+En la \textbf{sesión \#31}, se trabajó en el Laboratorio Aula Visual con el tema \textbf{``Defensa de grupo: Arquitectura del software del módulo SICA asignado''}. Los grupos de trabajo realizaron la exposición de sus diapositivas correspondientes a la actividad \textbf{A2-2}, las cuales fueron editadas para ser compartidas posteriormente a través del grupo de WhatsApp.\\
+Finalmente, en la \textbf{sesión \#32}, se abordó en el aula el tema “Evaluación final sumativa”, durante el cual se llevó a cabo una evaluación diseñada para medir y valorar de manera integral los conocimientos, habilidades y competencias adquiridas por los estudiantes a lo largo de todo el proceso de aprendizaje.
+
+\subsection{Encuesta de satisfacción}
+\label{sec:encu-de-satisf}
+
+En la afirmación ¿Qué tan útiles consideras las actividades realizadas para comprender los conceptos clave del ciclo de vida del software?, la categoría de respuesta ``Muy útiles'' y ``Útiles'' lideran las menciones (68\% y 30\%) en tanto que la opción ``Poco útiles'' obtiene un bajo porcentaje (2\%).
+En la afirmación ¿Cómo calificarías la dinámica de trabajo en equipo utilizando los roles de Scrum?, la categoría de respuesta ``Muy efectiva'' y ``Efectiva'' obtuvieron (56\% y 40\%) tanto que la opción ``Poco efectiva'' e ``Inefectiva'' (2\% y 2\%).
+En la afirmación ¿Qué tan claro fue el aprendizaje sobre la metodología ágil Scrum después de la dramatización?, las menciones se concentra en las respuestas ``Muy claro'' y ``Claro'' con (50\% y 44\%), mientras que la respuesta ``Poco claro'' registra el 6\% restante.
+
+En la afirmación ¿Te resultó práctico interactuar directamente con el usuario para el levantamiento de requerimientos?, las menciones se concentran en las categorías de respuesta ``Muy práctico'' y ``Práctico'' con 54\% y 36\% respectivamente, mientras que la respuesta ``Poco práctico'' registra 6\% y ``No práctico'' 4\%.
+
+En la afirmación ¿Qué tan valiosa fue la experiencia de desarrollar prototipos de interfaces web?, las menciones se concentra en las categorías de respuestas ``Muy valiosa'' y ``Valiosa'' con 50\% y 46\% respectivamente, mientras que la respuesta ``Poco valiosa'' obtuvo el 4\% restante.
+
+En la afirmación ¿Cómo evaluas la presentación de proyectos en la feria científica y casa abierta?, las menciones se concentran en las categorías ``Muy satisfactoria'' y ``Satisfactoria'' con 44\% y 50\% respectivamente, mientras que la respuesta ``Poco satisfactoria'' obtuvo el 6\% restante.
+
+En la afirmación ¿Qué tan accesible fue el uso de GitLab para cargar el módulo MVC?, las menciones se concentran en las categorías ``Muy accesible'' y ``Accesible'' con 45\% y 44\% respectivamente, mientras que la respuesta ``Poco accesible'' obtuvo el 10\%.
+
+En la afirmación ¿Qué tan atractivo consideraste el uso de la técnica Chroma Key para la presentación virtual sobre la arquitectura MVC?, las menciones se concentran en las categorías ``Muy atractivo'' y ``Atractivo'' con 32\% y 54\% respectivamente, mientras que las respuesta ``Poco atractivo''y ``Nada atractivo'' obtuvieron 12\% y 2\%.
+En la afirmación ¿Prefieres aprender mediante actividades prácticas y proyectos como los realizados, en comparación con solo recibir contenidos y evaluaciones tradicionales?, las mencione se concentraron en las categorías ``Definitivamente prefiero las actividades prácticas'' y ``Prefiero más las actividades prácticas, pero también un poco de teoría tradicional'' con 50\% y 50\% respectivamente.
+
+En la afirmación ¿Sientes que el aprendizaje basado en proyectos es más efectivo para tu formación que las evaluaciones tradicionales?,  las menciones se concentran en las categorías ``Totalmente de acuerdo'' y ``De acuerdo'' con 44\% y 44\% respectivamente, en cambio la respuesta ``En desacuerdo'' obtuvo un 12\%.
+
+En la afirmación Consideras que las actividades realizadas te preparan mejor para los desafíos profesionales que los métodos tradicionales?, las menciones se concentran en las categorías ``Totalmente de acuerdo'' y ``De acuerdo'' con 48\% y 52\% respectivamente.
+
+En la afirmación ``En general, ¿qué tan satisfecho(a) estás con las actividades implementadas en esta asignatura?'', las menciones se concentran en las categorías ``Muy satisfecho(a)'' y ``Satisfecho(a)'' con 32\% y 66\% respectivamente, mientras que la respuesta ``Poco satisfecho(a) obtuvo 2\%.
+
+En la afirmación ¿Recomendarías esta metodología a otros estudiantes de la carrera?, las menciones se concentran en las categorías ``Definitivamente si'' y ``Probablemente si'' con 60\% y 40\% respectivamente.
+
+
+\subsection{Respuesta a pregunta abierta}
+\label{sec:resp-preg-abierta}
+
+Con la finalidad de dar la oportunidad de que los estudiantes pudieran expresarse de forma libre y opiniones que aporte a un proceso de mejoras se dejo una pegunta abierta cuyos resultados se resumen en el siguiente cuadro.
+
+\end{multicols}
+% Definimos un nuevo tipo de columna para incluir padding
+\newcolumntype{P}[1]{>{\raggedright\arraybackslash}p{#1}<{\hspace{2mm}}}
+
+
+\noindent
+\begin{longtable}{|p{3.5cm}|p{5cm}|p{6cm}|}
+  \caption{Resumen de respuesta a pregunta abierta} \label{tab:respuestaabierta} \\
+\hline
+\rowcolor{gray!20}
+\textbf{Categoría} & \textbf{Fortaleza} & \textbf{Debilidad} \\ \hline
+\endfirsthead
+
+\hline
+\rowcolor{gray!20}
+\textbf{Categoría} & \textbf{Fortaleza} & \textbf{Debilidad} \\ \hline
+\endhead
+\hline
+\endfoot
+
+\hline
+\endlastfoot
+    Conexión teoría-práctica &
+                               \begin{minipage}[H]{1.0\linewidth}
+                                 \vspace{4pt}
+                                 \begin{itemize}[leftmargin=8pt]
+                                 \item Permitió aplicar conceptos teóricos a problemas reales.
+                                 \item Experiencia fue valiosa y abordo todas las etapas del ciclo de vida del software.
+                                 \end{itemize}
+                                  \vspace{4pt}
+
+                               \end{minipage} &
+                                 \begin{minipage}[H]{1.0\linewidth}
+                                 \begin{itemize}[leftmargin=8pt]
+                      
+                                       \item      Necesidad de más actividades prácticas que reflejen retos reales de la carrera.
+        \end{itemize}
+                               \end{minipage}
+
+                                         \\ \hline
+    Trabajo en equipo & \begin{minipage}[H]{1.0\linewidth}
+                                 \begin{itemize}[leftmargin=8pt]
+                                 \item Fomenta la colaboración y resolución de problemas reales.
+                                 \end{itemize}
+                               \end{minipage} & \begin{minipage}[H]{1.0\linewidth}
+                                 \vspace{2pt}
+                                 \begin{itemize}[leftmargin=8pt]
+                                 \item Falta claridad en la asignación de roles dentro de los equipos.
+
+                                 \item  Evaluación de contribuciones individuales podría ser más justa.
+                                   \item Mejora de la comunicación entre los miembros del equipo.
+
+                                 \end{itemize}
+                                 \vspace{1pt}
+                               \end{minipage} \\ \hline 
+
+
+    Retroalimentación & \begin{minipage}[H]{1.0\linewidth}
+                                 \begin{itemize}[leftmargin=8pt]
+                                 \item Retroalimentación existente es valiosa.
+                                 \end{itemize}
+                               \end{minipage} &
+                                \begin{minipage}[H]{1.0\linewidth}
+                                 \vspace{4pt}
+                                 \begin{itemize}[leftmargin=8pt]
+                                 \item Necesidad de retroalimentación más frecuente durante el desarrollo de los proyectos.
+                                 \item Evaluación del proceso, no solo de los resultados finales.
+                                 \end{itemize}
+                                                                  \vspace{2pt}
+                               \end{minipage} \\ \hline 
+    Herramientas y recursos & \begin{minipage}[H]{1.0\linewidth}
+      \vspace{2pt}      
+                                 \begin{itemize}[leftmargin=8pt]
+                                 \item Uso de metodologías ágiles como Scrum y herramientas como GitLab para colaboración.
+                                 \item Beneficio de frameworks explicados en clase.
+                                 \end{itemize}
+                                \vspace{1pt}
+                               \end{minipage} & \begin{minipage}[H]{1.0\linewidth}
+                                 \begin{itemize}[leftmargin=8pt]
+                                 \item Integración insuficiente de herramientas actuales de desarrollo.
+                                 \end{itemize}
+                               \end{minipage} \\ \hline 
+    Organización & \begin{minipage}[H]{1.0\linewidth}
+                                 \begin{itemize}[leftmargin=8pt]
+                                 \item Metodología bien estructurada en general.
+
+                                 \end{itemize}
+                               \end{minipage} & \begin{minipage}[H]{1.0\linewidth}
+                                 \vspace{2pt}
+                                 \begin{itemize}[leftmargin=8pt]
+                                 \item Falta de organización en los proyectos.
+                                 \item Mejora en la planificación y priorización  de tareas.
+                                 \item Necesidad de guías más detalladas y definiciones claras de objetivos.
+                                 \end{itemize}
+                                 \vspace{2pt}
+                               \end{minipage} \\ \hline 
+    Dinamismo y motivación & \begin{minipage}[H]{1.0\linewidth}
+                                 \begin{itemize}[leftmargin=8pt]
+                                 \item Actividades interesantes como dramatización y participación en ferias.
+                                 \end{itemize}
+                               \end{minipage} & \begin{minipage}[H]{1.0\linewidth}
+                                 \vspace{2pt}
+                                 \begin{itemize}[leftmargin=8pt]
+                                 \item Actividades podrían ser más dinámicas para mantener el interés.
+                                 \item Algunos estudiante requieren mayor compromiso y empeño en las actividades.
+                                 \end{itemize}
+                                 \vspace{1pt}
+                               \end{minipage} \\ \hline 
+    Aplicación real & \begin{minipage}[H]{1.0\linewidth}
+      \vspace{2pt}
+                                 \begin{itemize}[leftmargin=8pt]
+                                 \item La ABP permitió  experimentar desafíos reales como requerimientos cambiantes y trabajo con cliente ficticios.
+                                 \end{itemize}
+                                 \vspace{1pt}
+                               \end{minipage} & \begin{minipage}[H]{1.0\linewidth}
+                                 \begin{itemize}[leftmargin=8pt]
+                                 \item Poca personalización de metodologías a las necesidades del equipo.
+                                 \end{itemize}
+                               \end{minipage} \\ \hline 
+    Evaluación & \begin{minipage}[H]{1.0\linewidth}
+                                 \begin{itemize}[leftmargin=8pt]
+                                 \item Proyectos facilitan aprendizaje práctico.
+                                 \end{itemize}
+                               \end{minipage} & \begin{minipage}[H]{1.0\linewidth}
+                                 \vspace{2pt}
+                                 \begin{itemize}[leftmargin=8pt]
+                                 \item Falto una evaluación más profunda del proceso y habilidades blandas (liderazgo, trabajo en equipo).
+                               \end{itemize}
+                               \vspace{1pt}
+                               \end{minipage} \\ \hline 
+    Infraestructura & \begin{minipage}[H]{1.0\linewidth}
+      \vspace{2pt}
+                                 \begin{itemize}[leftmargin=8pt]
+                                 \item El uso del laboratorio benefició el aprendizaje paso a paso.
+                                 \end{itemize}
+                                 \vspace{0.5pt}
+                               \end{minipage} & \begin{minipage}[H]{1.0\linewidth}
+                                 \begin{itemize}[leftmargin=8pt]
+                                 \item El aprovechamiento del laboratorio puede haber sido mejor.
+                                 \end{itemize}
+                               \end{minipage} \\ \hline 
+    Formación Inicial & \begin{minipage}[H]{1.0\linewidth}
+      \vspace{2pt}
+                                 \begin{itemize}[leftmargin=8pt]
+                                 \item Introducir la metodología en los primeros semestres construye una base sólida para el aprendizaje.
+
+                                 \end{itemize}
+                                 \vspace{1pt}
+                               \end{minipage} & \begin{minipage}[H]{1.0\linewidth}
+                                 \begin{itemize}[leftmargin=8pt]
+                                 \item Falta de preparación inicial en teoría y habilidades básicas para algunos estudiantes.
+                                 \end{itemize}
+                               \end{minipage} \\ \hline 
+    Complejidad y desafío & \begin{minipage}[H]{1.0\linewidth}
+                                 \begin{itemize}[leftmargin=8pt]
+                                 \item Las actividades retadoras fueron muy valoradas.
+                                 \end{itemize}
+                               \end{minipage} & \begin{minipage}[H]{1.0\linewidth}
+                                 \vspace{2pt}
+                                 \begin{itemize}[leftmargin=8pt]
+                                 \item Algunos de las actividades de aprendizaje debieron ser más complejos para aumentar el aprendizaje.
+                                 \end{itemize}
+                                 \vspace{1pt}
+                               \end{minipage} \\ \hline 
+
+
+
+
+\end{longtable}
+    
+
+                               
+
+
+
+\begin{multicols}{2}
+
+\section{Discusión}
+\label{sec:discusion}
+La metodología de aprendizaje  basada en proyectos (ABP) esta propuesta en el modelo educativo de la UTLVT\cite{canchingre2023} y es una decisión del docente aplicarlo en función de la asignatura dictada por él, en la asignatura de Ingeniería de Software I,  ofreció una ventaja significativa frente a métodos tradicionales, al permitir a los estudiantes adquirir experiencia práctica y enfrentar problemas reales. Sin embargo, algunos desafíos incluyen la gestión del tiempo y la necesidad de recursos adicionales para implementar estas actividades.\\
+Las respuestas a la pregunta abierta destacaron la necesidad de mejorar las actividades de aprendizaje prácticas. Uno de los puntos críticos señalados fue que el entorno en el que se ejecutaron estas actividades no reflejaba de manera suficiente un contexto realista, ya que se desarrollaron exclusivamente dentro del ámbito académico. Esto impidió que algunos participantes percibieran el entorno como una simulación de situaciones de la vida real.\\
+Además, se identificó la necesidad de un trabajo más profundo en la interiorización y adopción de los roles asignados a los integrantes, ya que no todos lograron asumirlos como era esperado. También se enfatizó la importancia de realizar evaluaciones más precisas y equitativas para cada integrante. En este sentido, una evaluación continua a lo largo del desarrollo de las actividades sería fundamental para garantizar un seguimiento adecuado del desempeño.\\
+Por último, se destacó la relevancia de utilizar laboratorios como parte del proceso, ya que estos proporcionan un entorno más técnico y especializado que puede acercar la experiencia académica a un contexto profesional real.\\
+Uno de los grandes desafíos consiste en la generación de competencias esenciales para realizar investigación, según~\cite{madrid2020}, estas son Identificar problemas o situaciones problemáticas que requieren investigación, Estructurar el problema, Teorizar acerca de posibles soluciones, Escoger una metodología para investigar alternativas de solución, Generar evidencias con base en la investigación,Analizar información o datos, Utilizar pensamiento inductivo e hipotético-deductivo, Formular inferencias y conclusiones mediante un proceso de investigación con rigor científico. \\
+
+\section{Conclusiones y Recomendaciones}
+\label{sec:concl-y-recom}
+
+La experiencia obtenida al aplicar la metodología basada en proyecto en la asignatura de Ingeniería de Software I ha demostrado, que el aprendizaje de los estudiantes se ha beneficiado enormemente de un enfoque práctico y basado en proyectos. Se  recomienda extender esta metodología a otras asignatura técnicas y fortalecer la formación inicial de los estudiantes en habilidades básicas, Asimismo, se sugiere implementar evaluaciones continuas y proporcionar recursos adicionales para optimizar los resultados  y formar profesionales más preparados para el entorno laboral.
+
+
+
+\bibliographystyle{apacite}
+\bibliography{referencia.bib}
+
+\end{multicols}
+\end{document}
+
+
+%%% Local Variables:
+%%% mode: LaTeX
+%%% TeX-master: t
+%%% End:

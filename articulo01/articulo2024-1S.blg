@@ -1,0 +1,56 @@
+This is BibTeX, Version 0.99d (TeX Live 2023/Fedora 40)
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: articulo2024-1S.aux
+The style file: apacite.bst
+Reallocated glb_str_ptr (elt_size=4) to 20 items from 10.
+Reallocated global_strs (elt_size=200001) to 20 items from 10.
+Reallocated glb_str_end (elt_size=4) to 20 items from 10.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated wiz_functions (elt_size=4) to 9000 items from 6000.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Database file #1: referencia.bib
+apacite.bst [2013/07/21 v6.03 APA bibliography style]
+You've used 19 entries,
+            6951 wiz_defined-function locations,
+            1376 strings with 13436 characters,
+and the built_in function-call counts, 32591 in all, are:
+= -- 4011
+> -- 220
+< -- 1602
++ -- 1547
+- -- 40
+* -- 2044
+:= -- 6215
+add.period$ -- 76
+call.type$ -- 19
+change.case$ -- 325
+chr.to.int$ -- 0
+cite$ -- 38
+duplicate$ -- 767
+empty$ -- 1363
+format.name$ -- 331
+if$ -- 6213
+int.to.chr$ -- 0
+int.to.str$ -- 57
+missing$ -- 0
+newline$ -- 447
+num.names$ -- 152
+pop$ -- 675
+preamble$ -- 1
+purify$ -- 78
+quote$ -- 0
+skip$ -- 2083
+stack$ -- 0
+substring$ -- 1664
+swap$ -- 436
+text.length$ -- 41
+text.prefix$ -- 0
+top$ -- 1
+type$ -- 1520
+warning$ -- 0
+while$ -- 117
+width$ -- 0
+write$ -- 508
